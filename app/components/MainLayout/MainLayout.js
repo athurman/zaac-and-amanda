@@ -1,6 +1,9 @@
-import React, {Component, PropTypes} from 'react';
-import {Nav, Navbar, NavItem} from 'react-bootstrap';
-import {Link} from 'react-router';
+import React, {Component, PropTypes} from 'react'
+import radium from 'radium'
+import NavBar from '../NavBar/NavBar'
+
+// styles
+import generalStyles from '../GeneralStyles/GeneralStyles'
 
 class PageLayout extends Component {
   static propTypes = {
@@ -11,47 +14,14 @@ class PageLayout extends Component {
   };
 
   render() {
-    const {children} = this.props;
+    const {children} = this.props
     return (
-      <div style={{width: '100%'}}>
-        <Navbar>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <Link to='/'>
-                A + Z
-              </Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-              <li>
-                <Link to='/'>
-                  Wedding
-                </Link>
-              </li>
-              <li>
-                <Link to='/location'>
-                  Location
-                </Link>
-              </li>
-              <li>
-                <Link to='/registry'>
-                  Gifts
-                </Link>
-              </li>
-              <li>
-                <Link to='/rsvp'>
-                  RSVP
-                </Link>
-              </li>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+      <div style={[generalStyles.site]}>
+        <NavBar />
         {children}
       </div>
-    );
+    )
   }
 }
 
-export default PageLayout;
+export default radium(PageLayout)
