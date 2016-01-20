@@ -1,6 +1,6 @@
-import React, {Component, PropTypes} from 'react';
-import {render} from 'react-dom';
-import {Router} from 'react-router';
+import React, {Component, PropTypes} from 'react'
+import {render} from 'react-dom'
+import {Router} from 'react-router'
 
 class Root extends Component {
   static propTypes = {
@@ -15,8 +15,8 @@ class Root extends Component {
           {this.props.routes}
         </Router>
       </div>
-    );
+    )
   }
 }
 
-export default Root;
+export default Root

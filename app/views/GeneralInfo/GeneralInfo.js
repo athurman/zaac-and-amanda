@@ -8,8 +8,8 @@ class GeneralInfo extends Component {
           <h1>General Info</h1>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default GeneralInfo;
+export default GeneralInfo

@@ -12,4 +12,4 @@ class WeddingLocation extends Component {
   }
 }
 
-export default WeddingLocation;
+export default WeddingLocation

@@ -8,8 +8,8 @@ class WeddingRsvp extends Component {
           <h1>RSVP</h1>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default WeddingRsvp;
+export default WeddingRsvp

@@ -8,8 +8,8 @@ class WeddingGifts extends Component {
           <h1>Wedding Gifts</h1>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default WeddingGifts;
+export default WeddingGifts
