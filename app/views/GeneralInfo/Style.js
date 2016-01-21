@@ -11,10 +11,12 @@ style.image = {
 }
 
 style.jumbotron = {
-  background: 'url(../img/general-info-bg.jpg) no-repeat',
+  backgroundImage: 'url(\'../img/general-info-bg.jpg\')',
   backgroundSize: 'cover',
   backgroundPosition: '0px -90px',
-  padding: '246px 0 200px',
+  backgroundRepeat: 'no-repeat',
+  paddingBottom: 200,
+  paddingTop: 246,
 }
 
 style.generalAddress = {
@@ -95,9 +97,11 @@ style.timeHeader = {
 }
 
 style.weddingDayJumbotron = {
-  background: 'url(../img/engagement.jpg) no-repeat',
+  backgroundImage: 'url(\'../img/engagement.jpg\')',
   backgroundSize: 'cover',
-  padding: '150px 0',
+  backgroundRepeat: 'no-repeat',
+  paddingBottom: 150,
+  paddingTop: 150,
 }
 
 style.whiteSection = {
