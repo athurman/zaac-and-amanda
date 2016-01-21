@@ -4,6 +4,8 @@ const style = {}
 style.colors = {
   black: '#37373C',
   teal: '#87D0C7',
+  tealHover: '#52ADA6',
+  trueWhite: '#FFFFFF',
   white: '#FFFEF5',
   whiteHover: '#E3E2DA',
 }
