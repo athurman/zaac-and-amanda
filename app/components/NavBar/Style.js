@@ -1,13 +1,17 @@
 // styles
 import generalStyles from '../GeneralStyles/GeneralStyles'
-console.log(generalStyles)
+
 const style = {}
 
 style.navBar = {
   backgroundColor: 'transparent',
   border: 'none',
   borderRadius: 0,
+  float: 'left',
+  margin: 0,
   paddingTop: 20,
+  paddingBottom: 16,
+  width: '100%',
 }
 
 style.links = {
