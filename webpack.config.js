@@ -28,8 +28,8 @@ module.exports = {
         include: __dirname + '/app'
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: 'url?limit=8192',
+        test: /\.(png|jpg)$/,
+        loader: 'url',
       },
     ]
   },
