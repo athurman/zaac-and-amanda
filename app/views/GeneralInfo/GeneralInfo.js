@@ -38,7 +38,7 @@ class GeneralInfo extends Component {
                 </p>
               </Col>
               <Col xs={12} md={4}>
-                <img style={[style.image]} src='../img/amanda.jpg' />
+                <img style={[style.image]} src='../img/amanda.JPG' />
                 <h5 style={[style.storyHeader]}>Amanda's Story</h5>
                 <p style={[style.storyDescription]}>
                   Amanda Thurman grew up in Louisville, KY, attending Ballard High School. She studied at WKU and worked
