@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react'
-import radium from 'radium'
+import radium, {StyleRoot} from 'radium'
 import NavBar from '../NavBar/NavBar'
 
 // styles
@@ -16,10 +16,12 @@ class PageLayout extends Component {
   render() {
     const {children} = this.props
     return (
-      <div style={[generalStyles.site]}>
-        <NavBar />
-        {children}
-      </div>
+      <StyleRoot>
+        <div style={[generalStyles.site]}>
+          <NavBar />
+          {children}
+        </div>
+      </StyleRoot>
     )
   }
 }

@@ -15,7 +15,7 @@ class WeddingLocation extends Component {
           <h1 style={[style.mainHeader]}>Travel</h1>
           <p style={[style.miniHeader]}>Murfreesboro, Tennessee</p>
         </Jumbotron>
-                <div style={[style.whiteSection]}>
+        <div style={[style.whiteSection]}>
           <div className='container-fluid' style={[style.smallContainer]}>
             <h3 style={[style.whiteSectionHeader]}>
               Directions
@@ -36,8 +36,25 @@ class WeddingLocation extends Component {
               </Col>
             </Row>
             <Row className='show-grid'>
-              <Col xs={12} md={12} style={{height: 400}}>
+              <Col xs={12} md={12} style={{height: 400, marginTop: 50}}>
                 <LocationMap />
+              </Col>
+            </Row>
+          </div>
+        </div>
+        <Jumbotron style={style.whereToStayJumbotron}>
+          <h1 style={[style.mainHeader]}>Where to Stay</h1>
+          <p style={[style.miniHeader]}>Accomodations</p>
+        </Jumbotron>
+        <div style={[style.whiteSection]}>
+          <div className='container-fluid' style={[style.smallContainer]}>
+            <Row className='show-grid'>
+              <Col xs={12} md={12}>
+                <h5 style={[style.storyHeader]}>DoubleTree by Hilton Hotel Murfreesboro</h5>
+                <p style={[style.storyDescription]}>
+                  We have rooms blocked off for wedding guests at a hotel in the Murfreesboro area. Mention the
+                  Thurman-Christopher wedding when you book to get the group discount.
+                </p>
               </Col>
             </Row>
           </div>

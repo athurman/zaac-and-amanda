@@ -11,12 +11,20 @@ style.image = {
 }
 
 style.jumbotron = {
-  backgroundImage: 'url(\'../img/general-info-bg.jpg\')',
-  backgroundSize: 'cover',
-  backgroundPosition: '0px -90px',
+  backgroundImage: 'url(\'../img/general-info-bg-mobile.jpg\')',
+  backgroundSize: '100%',
   backgroundRepeat: 'no-repeat',
-  paddingBottom: 200,
-  paddingTop: 246,
+  paddingBottom: 100,
+  paddingTop: 146,
+  '@media (min-width: 768px)': {
+    backgroundImage: 'url(\'../img/general-info-bg.jpg\')',
+    backgroundSize: 'cover',
+    paddingBottom: 200,
+    paddingTop: 246,
+  },
+  '@media (min-width: 992px)': {
+    backgroundPosition: '0 -90px',
+  },
 }
 
 style.generalAddress = {
@@ -29,11 +37,14 @@ style.generalAddress = {
 
 style.mainHeader = {
   fontFamily: generalStyles.font.mainFont,
-  fontSize: 70,
+  fontSize: 50,
   fontWeight: 300,
   textAlign: 'center',
   letterSpacing: 1,
   margin: '10px 0',
+  '@media (min-width: 768px)': {
+    fontSize: 70,
+  }
 }
 
 style.miniHeader = {
@@ -97,11 +108,17 @@ style.timeHeader = {
 }
 
 style.weddingDayJumbotron = {
-  backgroundImage: 'url(\'../img/engagement.jpg\')',
-  backgroundSize: 'cover',
+  backgroundImage: 'url(\'../img/engagement-mobile.jpg\')',
+  backgroundSize: '100%',
   backgroundRepeat: 'no-repeat',
-  paddingBottom: 150,
-  paddingTop: 150,
+  paddingBottom: 75,
+  paddingTop: 75,
+  '@media (min-width: 768px)': {
+    backgroundImage: 'url(\'../img/engagement.jpg\')',
+    backgroundSize: 'cover',
+    paddingBottom: 150,
+    paddingTop: 150,
+  },
 }
 
 style.whiteSection = {

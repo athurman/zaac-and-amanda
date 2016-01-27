@@ -4,20 +4,29 @@ import generalStyles from '../../components/GeneralStyles/GeneralStyles'
 const style = {}
 
 style.jumbotron = {
-  backgroundImage: 'url(\'../img/location-bg.jpg\')',
-  backgroundSize: 'cover',
+  backgroundImage: 'url(\'../img/location-bg-mobile.jpg\')',
+  backgroundSize: '100%',
   backgroundRepeat: 'no-repeat',
-  paddingBottom: 200,
-  paddingTop: 246,
+  paddingBottom: 100,
+  paddingTop: 146,
+  '@media (min-width: 768px)': {
+    backgroundImage: 'url(\'../img/location-bg.jpg\')',
+    backgroundSize: 'cover',
+    paddingBottom: 200,
+    paddingTop: 246,
+  }
 }
 
 style.mainHeader = {
   fontFamily: generalStyles.font.mainFont,
-  fontSize: 70,
+  fontSize: 50,
   fontWeight: 300,
   textAlign: 'center',
   letterSpacing: 1,
   margin: '10px 0',
+  '@media (min-width: 768px)': {
+    fontSize: 70,
+  }
 }
 
 style.miniHeader = {
@@ -49,6 +58,21 @@ style.storyDescription = {
   fontWeight: 300,
   lineHeight: '1.6em',
   textAlign: 'center',
+}
+
+style.whereToStayJumbotron = {
+  backgroundImage: 'url(\'../img/doubletree-bg-mobile.jpg\')',
+  backgroundPosition: '0 -90px',
+  backgroundSize: '100%',
+  backgroundRepeat: 'no-repeat',
+  paddingBottom: 75,
+  paddingTop: 75,
+  '@media (min-width: 768px)': {
+    backgroundImage: 'url(\'../img/doubletree-bg.jpg\')',
+    backgroundSize: 'cover',
+    paddingBottom: 150,
+    paddingTop: 150,
+  },
 }
 
 style.whiteSection = {

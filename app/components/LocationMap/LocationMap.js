@@ -3,8 +3,6 @@ import {default as React, Component} from 'react';
 import {GoogleMapLoader, GoogleMap, Marker} from 'react-google-maps';
 /*
  * Sample From: https://developers.google.com/maps/documentation/javascript/examples/map-simple
- *
- * Add <script src='https://maps.googleapis.com/maps/api/js'></script> to your HTML to provide google.maps reference
  */
 export default class LocationMap extends Component {
   state = {
@@ -42,11 +40,6 @@ export default class LocationMap extends Component {
   }
 
   handleMarkerRightclick(index, event) {
-    /*
-     * All you modify is data, and the view is driven by data.
-     * This is so called data-driven-development. (And yes, it's now in
-     * web front end and even with google maps API.)
-     */
     var {markers} = this.state
     markers = update(markers, {
       $splice: [
