@@ -1,15 +1,27 @@
 import React, {Component, PropTypes} from 'react'
+import radium from 'radium'
+import {Link} from 'react-router'
+import {Col, Row} from 'react-bootstrap'
+import Jumbotron from '../../components/Jumbotron/Jumbotron'
+import RsvpForm from '../../components/RsvpForm/RsvpForm'
+
+// styles
+import style from './Style'
 
 class WeddingRsvp extends Component {
   render() {
     return (
-      <div>
+      <div style={style.mainBackground}>
         <div className='container-fluid'>
-          <h1>RSVP</h1>
+          <h1 style={[style.mainHeader]}>RSVP</h1>
+          <h3 style={[style.subHeader]}>Please enter your RSVP code below.</h3>
+          <div style={[style.formContainer]}>
+            <RsvpForm />
+          </div>
         </div>
       </div>
     )
   }
 }
 
-export default WeddingRsvp
+export default radium(WeddingRsvp)
