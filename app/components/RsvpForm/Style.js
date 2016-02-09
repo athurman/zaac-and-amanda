@@ -11,8 +11,44 @@ style.input = {
   width: '100%',
 }
 
+style.guestInput = {
+  paddingRight: 12,
+}
+
+style.guestInputLabel = {
+  paddingLeft: 15,
+}
+
+style.guestInputContainer = {
+  fontSize: 16,
+  marginBottom: 25,
+  textAlign: 'left',
+}
+
+style.guestInputHeader = {
+  fontSize: 20,
+  marginBottom: 18,
+}
+
 style.general = {
+  fontFamily: generalStyles.font.mainFont,
   textAlign: 'center',
+}
+
+style.rsvpForm = {
+  marginTop: 50,
+}
+
+style.subHeader = {
+  fontFamily: generalStyles.font.mainFont,
+  fontSize: 20,
+  fontWeight: 300,
+  textAlign: 'center',
+  letterSpacing: 1,
+  margin: '10px 0',
+  '@media (min-width: 768px)': {
+    fontSize: 30,
+  }
 }
 
 style.submitButton = {
