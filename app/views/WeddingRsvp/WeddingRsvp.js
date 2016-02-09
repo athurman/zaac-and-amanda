@@ -14,7 +14,6 @@ class WeddingRsvp extends Component {
       <div style={style.mainBackground}>
         <div className='container-fluid'>
           <h1 style={[style.mainHeader]}>RSVP</h1>
-          <h3 style={[style.subHeader]}>Please enter your RSVP code below.</h3>
           <div style={[style.formContainer]}>
             <RsvpForm />
           </div>

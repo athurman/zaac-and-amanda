@@ -35,7 +35,7 @@ style.subHeader = {
   fontWeight: 300,
   textAlign: 'center',
   letterSpacing: 1,
-  margin: '10px 0 50px',
+  margin: '10px 0',
   '@media (min-width: 768px)': {
     fontSize: 35,
   }
@@ -45,7 +45,7 @@ style.formContainer = {
   width: '100%',
   maxWidth: 525,
   margin: '0px auto',
-  padding: '30px 0',
+  padding: '15px 0',
 }
 
 export default style
